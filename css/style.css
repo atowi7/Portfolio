@@ -44,33 +44,33 @@ ul {
     padding-right: 15px;
 }
 
-.main-content{
+.main-content {
     padding-left: 270px;
 }
 
-.hidden{
+.hidden {
     display: none !important;
 }
 
-.section .container{
+.section .container {
     padding-top: 60px;
     padding-bottom: 70px;
 }
 
-.section-title{
+.section-title {
     flex: 0 0 100%;
     max-width: 100%;
     margin-bottom: 50px;
 }
 
-.section-title h2{
+.section-title h2 {
     font-size: 40px;
     color: var(--text-black-900);
     font-weight: 700;
     position: relative;
 }
 
-.section-title h2::before{
+.section-title h2::before {
     content: '';
     height: 4px;
     width: 50px;
@@ -80,7 +80,7 @@ ul {
     left: 0;
 }
 
-.section-title h2::after{
+.section-title h2::after {
     content: '';
     height: 4px;
     width: 25px;
@@ -106,7 +106,7 @@ ul {
 
 }
 
-.btn{
+.btn {
     font-size: 16px;
     font-weight: 500;
     padding: 12px 35px;
@@ -119,8 +119,12 @@ ul {
     border: none;
 }
 
-.btn:hover{
+.btn:hover {
     transform: scale(1.5);
+}
+
+.shadow-dark {
+    box-shadow: 0 0 15px rgb(48, 46, 77, 0.15);
 }
 
 .aside {
@@ -284,7 +288,7 @@ h3.myprofession {
     color: var(--skin-color);
 }
 
-.home-info p{
+.home-info p {
     margin-bottom: 70px;
     font-size: 20px;
     color: var(--text-black-700);
@@ -297,7 +301,7 @@ h3.myprofession {
     text-align: center;
 }
 
-.home .home-img::before{
+.home .home-img::before {
     content: '';
     position: absolute;
     height: 80px;
@@ -308,7 +312,7 @@ h3.myprofession {
     border-top: 10px solid var(--skin-color);
 }
 
-.home .home-img::after{
+.home .home-img::after {
     content: '';
     position: absolute;
     height: 80px;
@@ -325,41 +329,197 @@ h3.myprofession {
     border-radius: 25px;
 }
 
-.about .about-content{
+.about .about-content {
     flex: 0 0 100%;
     max-width: 100%;
 }
 
-.about .about-content .about-text{
+.about .about-content .about-text {
     flex: 0 0 100%;
     max-width: 100%;
 }
 
-.about .about-content .about-text h3{
+.about .about-content .about-text h3 {
     font-size: 24px;
     font-weight: 700;
     color: var(--text-black-900);
     margin-bottom: 10px;
 }
 
-.about .about-content .about-text h3 span{
+.about .about-content .about-text h3 span {
     color: var(--skin-color);
 }
 
-.about .about-content .about-text p{
+.about .about-content .about-text p {
     font-size: 16px;
     line-height: 20px;
     color: var(--text-black-700);
 }
 
-.about .about-content .personal-info{
+.about .about-content .personal-info {
     flex: 0 0 60%;
     max-width: 60%;
-    background: red;
+    margin-top: 40px;
 }
 
-.about .about-content .skills{
+.about .about-content .personal-info .info-item {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.about .about-content .personal-info .info-item p {
+    font-weight: 600;
+    padding: 10px 0;
+    font-size: 16px;
+    color: var(--text-black-900);
+    border-bottom: 1px solid var(--bg-black-50);
+}
+
+.about .about-content .personal-info .info-item p span {
+    font-weight: 400;
+    color: var(--text-black-700);
+    margin-left: 4px;
+    display: inline-block;
+}
+
+.about .about-content .personal-info .buttons {
+    margin-top: 30px;
+}
+
+.about .about-content .personal-info .buttons .btn {
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+.about .about-content .skills {
     flex: 0 0 40%;
     max-width: 40%;
-    background: green;
+    margin-top: 40px;
+}
+
+.about .about-content .skills .skill-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 30px;
+}
+
+.about .about-content .skills .skill-item h5 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 40px;
+    text-transform: capitalize;
+    color: var(--text-black-900);
+}
+
+.about .about-content .skills .skill-item .progress {
+    background-color: var(--bg-black-50);
+    height: 7px;
+    width: 100%;
+    border-radius: 4px;
+    position: relative;
+}
+
+.about .about-content .skills .skill-item .progress .progress-in {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-radius: 4px;
+    background-color: var(--skin-color);
+}
+
+.about .about-content .skills .skill-item .progress .skill-percentage {
+    position: absolute;
+    right: 0;
+    top: -40px;
+    font-weight: 400;
+    line-height: 40px;
+    color: var(--text-black-900);
+}
+
+.about .about-content .education,
+.about .about-content .experience {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: 30;
+}
+
+.about .about-content h3.title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: var(--text-black-900);
+}
+
+.about .about-content .timeline-box {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.about .about-content .timeline {
+    background-color: var(--bg-black-100);
+    padding: 30px 15px;
+    border: 1px solid var(--bg-black-50);
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+}
+
+.about .about-content .timeline .timeline-item {
+    position: relative;
+    padding-left: 35px;
+    padding-bottom: 50px;
+}
+
+.about .about-content .timeline .timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+.about .about-content .timeline .timeline-item:before {
+    content: '';
+    background-color: var(--skin-color);
+    height: 100%;
+    width: 2px;
+    position: absolute;
+    left: 6px;
+    top: 0;
+}
+
+.about .about-content .timeline .circle-dot {
+    content: '';
+    background-color: var(--skin-color);
+    height:15px;
+    width: 15px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.about .about-content .timeline .timeline-date {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: var(--text-black-700);
+    
+}
+
+.about .about-content .timeline .timeline-date .fa {
+    margin-right: 5px;
+}
+
+.about .about-content .timeline .timeline-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    color: var(--text-black-900);
+}
+
+.about .about-content .timeline .timeline-text {
+    line-height: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: justify;
+    color: var(--text-black-700);
 }
