@@ -39,16 +39,17 @@
             <section id="home" class="home section">
                 <div class="container">
                     <div class="row">
+                        <div class="home-img padd-15">
+                            <img src="image/myphoto.jpg" alt="">
+                        </div>
                         <div class="home-info padd-15">
-                            <h3 class="hello">Hello <span class="name n-typing">Abdulrahman Alatowi</span></h3>
+                            <h3 class="hello">Hello <span class="name n-typing"></span></h3>
                             <h3 class="myprofession"><span class="p-typing">Mobile app developer</span> </h3>
                             <!-- <p>major description major description
                                 major description major
                                 description major description major description major description</p> -->
+                            <a href="#portfolio" class="btn">My portfolio</a>
                             <a href="#contact" class="btn">Hire me</a>
-                        </div>
-                        <div class="home-img padd-15">
-                            <img src="image/myphoto.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -68,7 +69,8 @@
                                 <div class="about-text padd-15">
                                     <h3>I am <span>Abdulrahman Alatawi</span>, and I'm working as a <span>Mobile App
                                             Developer</span>, and I am studying a <span>Master's degree</span> in
-                                        <span>Computer Science</span> at <span>Cairo University</span></h3>
+                                        <span>Computer Science</span> at <span>Cairo University</span>
+                                    </h3>
                                     <!-- <p>major description major description
                                         major description major
                                         description major description major description major description</p> -->
@@ -95,8 +97,9 @@
                                     </div>
                                     <div class="row">
                                         <div class="buttons padd-15">
-                                            <a href="$" class="btn">Download CV</a>
-                                            <a href="$" class="btn">Hire me</a>
+                                            <a href="https://drive.google.com/file/d/1ryhgZi2qcIkeGHi5QiVdlDbAQ5B9XU2Y/view?usp=sharing"
+                                                target="_blank" class="btn">Download CV</a>
+                                            <a href="#contact" class="btn">Hire me</a>
                                         </div>
                                     </div>
                                 </div>
@@ -110,31 +113,10 @@
                                             </div>
                                         </div>
                                         <div class="skill-item padd-15">
-                                            <h5>HTML</h5>
+                                            <h5>PHP</h5>
                                             <div class="progress">
                                                 <div class="progress-in" style="width: 90%;"></div>
                                                 <div class="skill-percentage">90%</div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>CSS</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 85%;"></div>
-                                                <div class="skill-percentage">85%</div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>JS</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 80%;"></div>
-                                                <div class="skill-percentage">80%</div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>PHP</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 85%;"></div>
-                                                <div class="skill-percentage">85%</div>
                                             </div>
                                         </div>
                                         <div class="skill-item padd-15">
@@ -142,6 +124,13 @@
                                             <div class="progress">
                                                 <div class="progress-in" style="width: 85%;"></div>
                                                 <div class="skill-percentage">85%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item padd-15">
+                                            <h5>FIREBASE</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 80%;"></div>
+                                                <div class="skill-percentage">80%</div>
                                             </div>
                                         </div>
                                     </div>
@@ -300,7 +289,8 @@
                         <!-- Contact Info Item End -->
                         <!-- Contact Info Item Start -->
                         <div class="contact-info-item padd-15">
-                            <div class="icon"><i class="fa fa-envelope"></i></div>
+                            <div class="icon"><a href="mailto:dhoom.sedge@gmail.com" target="_blank"><i
+                                        class="fa fa-envelope"></i></a></div>
                             <h4>Email me</h4>
                             <p>dhoom.sedge@email.com</p>
                         </div>
@@ -308,7 +298,8 @@
                         <!-- Contact Info Item Start -->
                         <div class="contact-info-item padd-15">
                             <div class="icon">
-                                <a href="https://eg.linkedin.com/in/atowi7"><i class="fa fa-linkedin"></i></a>
+                                <a href="https://eg.linkedin.com/in/atowi7" target="_blank"><i
+                                        class="fa fa-linkedin"></i></a>
                             </div>
                             <h4>LinkedIn</h4>
                             <p>@atowi7</p>
@@ -317,7 +308,7 @@
                         <!-- Contact Info Item Start -->
                         <div class="contact-info-item padd-15">
                             <div class="icon">
-                                <a href="https://twitter.com"><i class="fa fa-twitter"></i></a>
+                                <a href="https://twitter.com/atowi7" target="_blank"><i class="fa fa-twitter"></i></a>
                             </div>
                             <h4>Twitter</h4>
                             <p>@atowi7</p>
@@ -327,42 +318,46 @@
                     <h3 class="contact-title padd-15">SEND ME A MESSAGE</h3>
                     <h4 class="contact-sub-title padd-15">I'M VERY RESPONSIVE TO MESSAGE</h4>
                     <!-- Contact Form Item Start -->
-                    <div class="row">
-                        <div class="contact-form padd-15">
-                            <div class="row">
-                                <div class="form-item col-6 padd-15">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Name">
+                    <form action="mailto:dhoom.sedge@gmail.com" method="post" enctype="text/plain">
+                        <div class="row">
+                            <div class="contact-form padd-15">
+                                <div class="row">
+                                    <div class="form-item col-6 padd-15">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Name">
+                                        </div>
+                                    </div>
+                                    <div class="form-item col-6 padd-15">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" placeholder="Email">
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="form-item col-6 padd-15">
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Email">
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Subject">
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-item col-12 padd-15">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Subject">
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                        <div class="form-group">
+                                            <textarea name="" id="" class="form-control"
+                                                placeholder="Message"></textarea>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-item col-12 padd-15">
-                                    <div class="form-group">
-                                        <textarea name="" id="" class="form-control" placeholder="Message"></textarea>
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                        <input type="submit" class="btn" placeholder="SEND ME">
+                                        <input type="reset" class="btn" placeholder="RESET">
                                     </div>
-
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-item col-12 padd-15">
-                                    <button type="button" class="btn">SEND ME</button>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </form>
+
 
                     <!-- Contact Form Item End -->
                 </div>
