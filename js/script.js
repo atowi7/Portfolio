@@ -1,8 +1,33 @@
+/*Change language*/
+
+var lang = {
+    ar: {
+        title: "عربي"
+    },
+    en: {
+        title: "english"
+    }
+};
+
+function changeLang(lang) {
+    location.hash = lang;
+    location.reload();
+}
+
+if (window.location.hash) {
+    if (window.location.hash == "#ar") {
+        document.getElementById('ar').title= lang.ar.title;
+    } else {
+        document.getElementById('ar').title= lang.en.title;
+    }
+
+}
+
 /*  type animation */
 
 var type = new Typed(".n-typing",
     {
-        strings: ["I'm Abdulrahman Alatowi","I'm a Master of Computer Science Student"],
+        strings: ["I'm Abdulrahman Alatowi", "I'm a Master of Computer Science Student"],
         typeSpeed: 150,
         BackSpeed: 50,
         loop: true
