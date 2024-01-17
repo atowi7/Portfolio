@@ -6,6 +6,7 @@
     --bg-black-50: #e8dfec;
     --text-black-900: #302e4d;
     --text-black-700: #504e70;
+    --text-blue-900: #000080;
 }
 
 body {
@@ -302,7 +303,7 @@ h3.myprofession {
     margin-bottom: 40px;
 }
 
-.home .btn-lang .btn{
+.home .btn-lang .btn {
     font-size: 18px;
     margin: auto;
     border-radius: 25px;
@@ -426,7 +427,7 @@ h3.myprofession {
     font-size: 20px;
     line-height: 40px;
     text-transform: capitalize;
-    color: var(--text-black-900);
+    color: var(--text-blue-900);
 }
 
 .about .about-content .skills .skill-item .progress {
@@ -741,15 +742,15 @@ h3.myprofession {
 
 @media (max-width:991px) {
     h3.hello {
-    font-size: 20px;
+        font-size: 20px;
     }
 
     h3.hello span {
-    font-size: 16px;
+        font-size: 16px;
     }
 
     h3.myprofession {
-    font-size: 18px;
+        font-size: 18px;
     }
 
     .btn {
