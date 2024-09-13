@@ -2,370 +2,437 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS files -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/skins/color.css">
-    <title>atowi7 : Mobile App Developer</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>atowi7 : Mobile App Developer</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
-    <!-- Main Countainer start -->
-    <div class="main-container">
-        <!-- Aside start -->
-        <div class="aside">
-            <div class="logo">
-                <a href="#">atowi<span>7</span></a>
-            </div>
-            <div class="nav-toggler">
-                <span></span>
-            </div>
-            <ul class="nav">
-                <li><a href="#home" id="navh"><i class="fa fa-home"></i> Home</a></li>
-                <li><a href="#about" id="nava"><i class="fa fa-user"></i> About</a></li>
-                <li><a href="#service" id="navs"><i class="fa fa-list"></i> Services</a></li>
-                <li><a href="#portfolio" id="navp"><i class="fa fa-briefcase"></i> Portofolio</a></li>
-                <li><a href="#contact" id="navt"><i class="fa fa-comments"></i> Contact</a></li>
-            </ul>
-        </div>
-        <!-- Aside End -->
-        <!-- Main Conten Start -->
-        <div class="main-content">
-            <!-- Home Section Start -->
-            <section id="home" class="home section">
-                <div class="container">
-                    <div class="row">
-                        <div class="btn-lang">
-                            <a onclick="changeLang(lang)" class="btn">ENGLISH</a>
-                            <a id="ar" onclick="changeLang(lang)" class="btn">عربي</a>
-                        </div>
-                        <div class="home-img padd-15">
-                            <img src="image/myphoto6.jpg" alt="">
-                        </div>
-                        <div class="home-info padd-15">
-                            <h3 class="hello">&lt;<span class="name n-typing"></span>/></h3>
-                            <h3 class="myprofession">&lt;<span class="p-typing"></span> /></h3>
-                            <!-- <p>major description major description
-                                major description major
-                                description major description major description major description</p> -->
-                            <a href="#portfolio" class="btn">My portfolio</a>
-                            <a href="#contact" class="btn">Hire me</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Home Section End -->
-            <!-- About Section Start -->
-            <section id="about" class="about section">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title padd-15">
-                            <h2>About Me</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="about-content padd-15">
-                            <div class="row">
-                                <div class="about-text padd-15">
-                                    <h3>I'm <span>Abdulrahman Alatawi</span>, and <span>Mobile App Developer</span>
-                                    </h3>
-                                    <!-- <p>major description major description
-                                        major description major
-                                        description major description major description major description</p> -->
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="personal-info padd-15">
-                                    <div class="row">
-                                        <div class="info-item padd-15">
-                                            <p>Age : <span>24</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>Degree : <span>Computer Science</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>City : <span>Hail</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>Email : <span>dhoom.sedge@gmail.com</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>Freelance : <span>Available</span></p>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="buttons padd-15">
-                                            <a href="https://drive.google.com/file/d/1ryhgZi2qcIkeGHi5QiVdlDbAQ5B9XU2Y/view?usp=sharing"
-                                                target="_blank" class="btn">Download CV</a>
-                                            <a href="#contact" class="btn">Hire me</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="skills padd-15">
-                                    <h3 class="title">Skills</h3>
-                                    <div class="row">
-                                        <div class="skill-item padd-15">
-                                            <h5>FLUTTER</h5>
-                                            <!-- <div class="progress">
-                                                <div class="progress-in" style="width: 95%;"></div>
-                                                <div class="skill-percentage">95%</div>
-                                            </div> -->
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>DART</h5>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>PHP</h5>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>SQL</h5>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>FIREBASE</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="education padd-15">
-                                    <h3 class="title">Education</h3>
-                                    <div class="row">
-                                        <div class="timeline-box padd-15">
-                                            <div class="timeline shadow-dark">
-                                                <!-- timeline item -->
-                                                <!-- <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> 2023 - NOW
-                                                    </h3>
-                                                    <h4 class="timeline-title">Master in Computer Science</h4>
-                                                    <p class="timeline-text">Cairo University</p>
-                                                    <p class="timeline-text">Egypt</p>
-                                                </div> -->
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> 2017 - 2022
-                                                    </h3>
-                                                    <h4 class="timeline-title">Bacholar in Computer Science</h4>
-                                                    <p class="timeline-text">Islamic University of Medina</p>
-                                                    <p class="timeline-text">Saudi Arabia</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- About Section End -->
-            <!-- Services Section Start -->
-            <section id="service" class="service section">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title padd-15">
-                            <h2>Services</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <!-- Service Item Start -->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-mobile-alt"></i>
-                                </div>
-                                <h4>Android App Development</h4>
-                                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident voluptas fugiat
-                                    mollitia dignissimos aut exercitationem cupiditate doloremque inventore? Alias autem
-                                    dicta magnam provident, consequuntur dolorem assumenda repellat voluptate eos ab.
-                                </p> -->
-                            </div>
-                        </div>
-                        <!-- Service Item End -->
-                        <!-- Service Item Start -->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-mobile-alt"></i>
-                                </div>
-                                <h4>IOS App Development</h4>
-                                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident voluptas fugiat
-                                    mollitia dignissimos aut exercitationem cupiditate doloremque inventore? Alias autem
-                                    dicta magnam provident, consequuntur dolorem assumenda repellat voluptate eos ab.
-                                </p> -->
-                            </div>
-                        </div>
-                        <!-- Service Item End -->
-                    </div>
-                </div>
-            </section>
-            <!-- Services Section End -->
-            <!-- Portfolio Section Start -->
-            <section id="portfolio" class="portfolio section">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title padd-15">
-                            <h2>Portfolio</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="portfolio-heading padd-15">
-                            <h2>My last portfolio : </h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <!-- Portfolio Item Start -->
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="image/portfolio/flutter-logo.png" alt="">
-                                </div>
+  <header class="header">
+    <a href="" class="logo"><i class='bx bx-code-alt'></i><span class="animate" style="--i:1;"></span></a>
+    <div class="bx bx-menu" id="menu-icon"><span class="animate" style="--i:2;"></span></div>
 
-                            </div>
-                        </div>
-                        <!-- Portfolio Item End -->
-                        <!-- Portfolio Item Start -->
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="image/portfolio/flutter-logo.png" alt="">
-                                </div>
+    <nav class="navbar">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <!-- <a href="#contact">Contact</a> -->
+      <span class="active-nav"></span>
+      <span class="animate" style="--i:2;"></span>
+    </nav>
+  </header>
 
-                            </div>
-                        </div>
-                        <!-- Portfolio Item End -->
-                        <!-- Portfolio Item Start -->
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="image/portfolio/flutter-logo.png" alt="">
-                                </div>
+  <!-- home section -->
+  <section class="home show-animate" id="home">
+    <div class="home-content">
+      <h1>Hi I'm <span>Abdulrahman</span><span class="animate" style="--i:2;"></span></h1>
+      <div class="text-animate">
+        <h3>Mobile app developer</h3>
+        <span class="animate" style="--i:3;"></span>
+      </div>
+      <p>I am a Computer Science student with skills in mobile app development using Flutter.
+        Experienced in building engaging, user-friendly applications and eager to apply my skills in
+        a professional environment. Looking for opportunities to learn, grow, and
+        contribute to innovative projects in the field of mobile development.
+        <span class="animate" style="--i:4;"></span>
+      </p>
 
-                            </div>
-                        </div>
-                        <!-- Portfolio Item End -->
-                        <!-- Portfolio Item Start -->
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="image/portfolio/flutter-logo.png" alt="">
-                                </div>
+      <div class="btn-box">
+        <a href="https://drive.google.com/file/d/1TIA5R-Y0j-Om7xZTodFLKTv06XeJk1bb/view?usp=sharing" target="_blank"
+          class="btn">Download CV</a>
+        <a href="#about" class="btn">Let's talk</a>
+        <span class="animate" style="--i:5;"></span>
+      </div>
 
-                            </div>
-                        </div>
-                        <!-- Portfolio Item End -->
-                    </div>
-            </section>
-            <!-- Portfolio Section End -->
-            <!-- Contact Section Start -->
-            <section id="contact" class="contact section">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title padd-15">
-                            <h2>Contact</h2>
-                        </div>
-                    </div>
-                    <h3 class="contact-title padd-15">HAVE YOU ANY QUESTIONS?</h3>
-                    <h4 class="contact-sub-title padd-15">I'M AT YOUR SERVICE</h4>
-                    <div class="row">
-                        <!-- Contact Info Item Start -->
-                        <!-- <div class="contact-info-item padd-15">
-                            <div class="icon"><i class="fa fa-phone"></i></div>
-                            <h4>Call on us</h4>
-                            <p>010101010101</p>
-                        </div> -->
-                        <!-- Contact Info Item End -->
-                        <!-- Contact Info Item Start -->
-                        <div class="contact-info-item padd-15">
-                            <div class="icon"><a href="mailto:dhoom.sedge@gmail.com" target="_blank"><i
-                                        class="fa fa-envelope"></i></a></div>
-                            <h4>Email me</h4>
-                            <p>dhoom.sedge@email.com</p>
-                        </div>
-                        <!-- Contact Info Item End -->
-                        <!-- Contact Info Item Start -->
-                        <div class="contact-info-item padd-15">
-                            <div class="icon">
-                                <a href="https://eg.linkedin.com/in/atowi7" target="_blank"><i
-                                        class="fa fa-linkedin"></i></a>
-                            </div>
-                            <h4>LinkedIn</h4>
-                            <p>@atowi7</p>
-                        </div>
-                        <!-- Contact Info Item End -->
-                        <!-- Contact Info Item Start -->
-                        <div class="contact-info-item padd-15">
-                            <div class="icon">
-                                <a href="https://twitter.com/atowi7" target="_blank"><i class="fa fa-twitter"></i></a>
-                            </div>
-                            <h4>Twitter</h4>
-                            <p>@atowi7</p>
-                        </div>
-                        <!-- Contact Info Item End -->
-                    </div>
-                    <h3 class="contact-title padd-15">SEND ME A MESSAGE</h3>
-                    <h4 class="contact-sub-title padd-15">I'M VERY RESPONSIVE TO MESSAGE</h4>
-                    <!-- Contact Form Item Start -->
-                    <form action="mailto:dhoom.sedge@gmail.com" method="post" enctype="text/plain">
-                        <div class="row">
-                            <div class="contact-form padd-15">
-                                <div class="row">
-                                    <div class="form-item col-6 padd-15">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Name">
-                                        </div>
-                                    </div>
-                                    <div class="form-item col-6 padd-15">
-                                        <div class="form-group">
-                                            <input type="email" class="form-control" placeholder="Email">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="form-item col-12 padd-15">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Subject">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="form-item col-12 padd-15">
-                                        <div class="form-group">
-                                            <textarea name="" id="" class="form-control"
-                                                placeholder="Message"></textarea>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="form-item col-12 padd-15">
-                                        <input type="submit" class="btn" placeholder="SEND ME">
-                                        <input type="reset" class="btn" placeholder="RESET">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-
-
-                    <!-- Contact Form Item End -->
-                </div>
-            </section>
-            <!-- Contact Section End -->
-        </div>
-        <!-- Main Conten End -->
     </div>
-    <!-- Main Countainer End -->
-    <!-- js files -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.umd.js"
-        integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="js/script.js"></script>
+
+
+
+    <div class="home-imgHover"></div>
+    <span class="animate home-img" style="--i:7;"></span>
+
+  </section>
+
+  <!-- about section -->
+  <section class="about" id="about">
+    <h2 class="heading">About <span>me</span><span class="animate scroll" style="--i:1;"></span></h2>
+    <div class="about-img">
+      <img src="image/myphoto6.jpg" alt="">
+      <span class="circle-spin"></span>
+      <span class="animate scroll" style="--i:2;"></span>
+    </div>
+    <div class="about-content">
+      <h3>Mobile App developer<span class="animate scroll" style="--i:3;"></span></h3>
+      <p>I am a Computer Science student with skills in mobile app development using Flutter.
+        Experienced in building engaging, user-friendly applications and eager to apply my skills in
+        a professional environment. Looking for opportunities to learn, grow, and
+        contribute to innovative projects in the field of mobile development.
+        <span class="animate scroll" style="--i:4;">
+      </p>
+
+      <div class="about-sci">
+        <div class="about-sci-item">
+          <a href="#" style="pointer-events: none;"><i class='bx bxs-phone'></i></a>
+          <h2>01117521253</h2>
+        </div>
+        <div class="about-sci-item">
+          <a href="mailto:dhoom.sedge@gmail.com"><i class='bx bxs-envelope'></i></a>
+          <h2>dhoom.sedge@gmail.com</h2>
+        </div>
+        <div class="about-sci-item">
+          <a href="https://github.com/atowi7" target="_blank"><i class='bx bxl-github'></i></a>
+          <h2>@atowi7</h2>
+        </div>
+        <div class="about-sci-item">
+          <a href="https://www.linkedin.com/in/atowi7" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+          <h2>@atowi7</h2>
+        </div>
+        <div class="about-sci-item">
+          <a href="#" style="pointer-events: none;"><i class='bx bxs-map'></i></a>
+          <h2>Egypt</h2>
+        </div>
+        <!-- <a href=""><i class='bx bxs-calendar'></i></a> -->
+
+        <span class="animate scroll" style="--i:5;"></span>
+      </div>
+
+  </section>
+
+  <!-- Education section -->
+  <section class="section" id="education">
+    <h2 class="heading"><span>Education</span><span class="animate scroll" style="--i:1;"></span></h2>
+
+    <div class="section-box">
+      <div class="section-content">
+        <div class="content">
+          <div class="year"><i class="bx bxs-calendar"> 2023 - 2025</i></div>
+          <h3>Master degree</h3>
+          <p>Cairo</p>
+        </div>
+      </div>
+      <div class="section-content">
+        <div class="content">
+          <div class="year"><i class="bx bxs-calendar"> 2017 - 2022</i></div>
+          <h3>Bacholar degree</h3>
+          <p>Suadi Arabia</p>
+        </div>
+      </div>
+      <span class="animate scroll" style="--i:3;">
+    </div>
+
+  </section>
+
+  <!-- Experience section -->
+  <section class="section" id="experience">
+    <h2 class="heading"> <span>Experience</span><span class="animate scroll" style="--i:1;"></span></h2>
+
+    <div class="section-box">
+      <div class="section-content">
+        <div class="content">
+          <div class="year"><i class="bx bxs-calendar">2021</i></div>
+          <h3>Software Development Intern</h3>
+          <p>Islamic University of Madinah</p>
+          <p>Contributed to the development of an Android application and a website
+            using Firebase, enhancing user interaction and functionality. Worked on
+            both front-end and back-end tasks, gaining experience in real-world
+            application development.</p>
+        </div>
+      </div>
+
+      <span class="animate scroll" style="--i:3;">
+    </div>
+
+  </section>
+
+  <!-- skills section -->
+  <section class="section" id="skills">
+    <h2 class="heading"><span>skills</span><span class="animate scroll" style="--i:1;"></span></h2>
+
+    <div class="section-box">
+      <h3 class="title">Technical skills<span class="animate scroll" style="--i:2;"></span></h3>
+
+      <div class="section-content">
+        <div class="content">
+          <h3>Flutter</h3>
+        </div>
+      </div>
+      <div class="section-content">
+        <div class="content">
+          <h3>Dart</h3>
+        </div>
+      </div>
+      <div class="section-content">
+        <div class="content">
+          <h3>GetX</h3>
+        </div>
+      </div>
+      <div class="section-content">
+        <div class="content">
+          <h3>Provider</h3>
+        </div>
+      </div>
+      <div class="section-content">
+        <div class="content">
+          <h3>Firebase</h3>
+        </div>
+      </div>
+      <div class="section-content">
+        <div class="content">
+          <h3>Mysql</h3>
+        </div>
+      </div>
+      <div class="section-content">
+        <div class="content">
+          <h3>PHP</h3>
+        </div>
+      </div>
+      <div class="section-content">
+        <div class="content">
+          <h3>HTML</h3>
+        </div>
+      </div>
+      <div class="section-content">
+        <div class="content">
+          <h3>CSS</h3>
+        </div>
+      </div>
+      <div class="section-content">
+        <div class="content">
+          <h3>Javasript</h3>
+        </div>
+      </div>
+      <div class="section-content">
+        <div class="content">
+          <h3>RESTful Api</h3>
+        </div>
+      </div>
+      <div class="section-content">
+        <div class="content">
+          <h3>OOP</h3>
+        </div>
+      </div>
+
+      <span class="animate scroll" style="--i:3;">
+    </div>
+
+
+
+    <div class="section-box">
+      <h2 class="title">Soft skills<span class="animate scroll" style="--i:4;"></span></h2>
+      <div class="section-content">
+        <div class="content">
+          <h3>Attention To Details</h3>
+        </div>
+      </div>
+      <div class="section-content">
+        <div class="content">
+          <h3>Communication Skills</h3>
+        </div>
+      </div>
+      <div class="section-content">
+        <div class="content">
+          <h3>Time Management</h3>
+        </div>
+      </div>
+      <div class="section-content">
+        <div class="content">
+          <h3>Team Collaboration</h3>
+        </div>
+      </div>
+
+
+      <span class="animate scroll" style="--i:4;">
+    </div>
+
+
+  </section>
+
+  <!-- Projects section -->
+  <section class="section" id="projects">
+    <h2 class="heading"><span>projects</span><span class="animate scroll" style="--i:1;"></span></h2>
+
+    <div class="section-box">
+      <div class="section-content">
+        <div class="content">
+          <h3>E-Commerce App</h3>
+          <p>Technologies: Flutter, Firebase, PHP, MySQL, GetX, MVC, APIs</p>
+          <p>Description: Developed an e-commerce app suite consisting of three apps: a
+            customer app for shopping and checkout, a driver app for handling orders and
+            deliveries, and an admin app for managing users, products, and orders. Utilized
+            MVC architecture, APIs, and GetX for state management, creating an integrated
+            system that enhances the user experience and operational efficiency.</p>
+        </div>
+      </div>
+      <div class="section-content">
+        <div class="content">
+          <h3>To-Do App</h3>
+          <p>Technologies: Flutter, SQFLite, Provider</p>
+          <p>Description: Built a task management app using Provider for state management and SQFLite for local data
+            storage, focusing on data persistence, and an intuitive user interface.</p>
+        </div>
+      </div>
+      <span class="animate scroll" style="--i:3;">
+    </div>
+
+  </section>
+
+  <!-- footer design -->
+  <footer class="footer">
+    <div class="footer-text">
+      <p>Copyright &copy; 2024 by atowi7 | All rights reserved.</p>
+      <span class="animate scroll" style="--i:1;"></span>
+    </div>
+    <div class="footer-iconTop">
+      <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+      <span class="animate scroll" style="--i:2;"></span>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+
 </body>
 
 </html>
+
+
+<!-- <div class="btn-box btns">
+        <a href="" class="btn">Read more</a>
+        <span class="animate scroll" style="--i:5;"></span>
+      </div>
+    </div> -->
+
+<!-- <section id="skills" class="skills">
+    <h2 class="heading">My <span>Skills</span> <span class="animate scroll" style="--i:1;"></span></h2>
+    <div class="skills-row">
+      <div class="skills-column">
+        <h3 class="title">Technical skills<span class="animate scroll" style="--i:2;"></span></h3>
+        <div class="skills-box">
+          <div class="skills-content">
+            <div class="progress">
+              <h3>Flutter <span>90%</span></h3>
+              <div class="bar"><span></span></div>
+            </div>
+            <div class="progress">
+              <h3>Dart <span>90%</span></h3>
+              <div class="bar"><span></span></div>
+            </div>
+            <div class="progress">
+              <h3>GetX <span>90%</span></h3>
+              <div class="bar"><span></span></div>
+            </div>
+            <div class="progress">
+              <h3>Provider<span>90%</span></h3>
+              <div class="bar"><span></span></div>
+            </div>
+            <div class="progress">
+              <h3>Firebase<span>90%</span></h3>
+              <div class="bar"><span></span></div>
+            </div>
+            <div class="progress">
+              <h3>RESTful APIs<span>60%</span></h3>
+              <div class="bar"><span></span></div>
+            </div>
+            <div class="progress">
+              <h3>GitHub<span>60%</span></h3>
+              <div class="bar"><span></span></div>
+            </div>
+            <div class="progress">
+              <h3>HTML<span>60%</span></h3>
+              <div class="bar"><span></span></div>
+            </div>
+            <div class="progress">
+              <h3>CSS<span>60%</span></h3>
+              <div class="bar"><span></span></div>
+            </div>
+            <div class="progress">
+              <h3>JavaScript<span>60%</span></h3>
+              <div class="bar"><span></span></div>
+            </div>
+            <div class="progress">
+              <h3>SQL<span>60%</span></h3>
+              <div class="bar"><span></span></div>
+            </div>
+            <div class="progress">
+              <h3>PHP<span>60%</span></h3>
+              <div class="bar"><span></span></div>
+            </div>
+            <div class="progress">
+              <h3>OOP<span>60%</span></h3>
+              <div class="bar"><span></span></div>
+            </div>
+          </div>
+          <span class="animate scroll" style="--i:3;"></span>
+        </div>
+      </div>
+
+      <div class="skills-column">
+        <h3 class="title">Soft skills<span class="animate scroll" style="--i:4;"></span></h3>
+        <div class="skills-box">
+          <div class="skills-content">
+            <div class="progress">
+              <h3>Attention to Detail <span>90%</span></h3>
+              <div class="bar"><span></span></div>
+            </div>
+            <div class="progress">
+              <h3>Team Collaboration <span>80%</span></h3>
+              <div class="bar"><span></span></div>
+            </div>
+            <div class="progress">
+              <h3>Time Management <span>70%</span></h3>
+              <div class="bar"><span></span></div>
+            </div>
+            <div class="progress">
+              <h3>Communication Skills<span>60%</span></h3>
+              <div class="bar"><span></span></div>
+            </div>
+          </div>
+          <span class="animate scroll" style="--i:5;"></span>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+
+<!-- contact section -->
+<!-- <section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me</span><span class="animate scroll" style="--i:1;"></span></h2>
+
+    <form action="mailto:dhoom.sedge@gmail.com" method="post" enctype="text/plain">
+      <div class="input-box">
+        <div class="input-field">
+          <input type="text" placeholder="Full name" required>
+          <span class="focus"></span>
+        </div>
+        <div class="input-field">
+          <input type="text" placeholder="Email" required>
+          <span class="focus"></span>
+        </div>
+        <span class="animate scroll" style="--i:2;"></span>
+      </div>
+      <div class="input-box">
+        <div class="input-field">
+          <input type="number" placeholder="Mobile Number" required>
+          <span class="focus"></span>
+        </div>
+        <div class="input-field">
+          <input type="text" placeholder="Email Subject" required>
+          <span class="focus"></span>
+        </div>
+        <span class="animate scroll" style="--i:3;"></span>
+      </div>
+      <div class="textarea-field">
+        <textarea name="" id="" cols="30" rows="10" placeholder="Message" required></textarea>
+        <span class="focus"></span>
+        <span class="animate scroll" style="--i:4;"></span>
+      </div>
+      <div class="btn-box btns">
+        <button type="submit" class="btn">Submit</button>
+        <span class="animate scroll" style="--i:5;"></span>
+      </div>
+    </form>
+  </section> -->
