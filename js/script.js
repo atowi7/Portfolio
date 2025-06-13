@@ -1,91 +1,59 @@
-/*Change language*/
-
-// var lang = {
-//     ar: {
-//         title: "عربي"
-//     },
-//     en: {
-//         title: "english"
-//     }
-// };
-
-// function changeLang(lang) {
-//     location.hash = lang;
-//     location.reload();
-// }
-
-// if (window.location.hash) {
-//     if (window.location.hash == "#ar") {
-//         document.getElementById('ar').title = lang.ar.title;
-//     } else {
-//         document.getElementById('ar').title = lang.en.title;
-//     }
-
-// }
-
-//toggle icon navbar
-let menuIcon = document.querySelector('#menu-icon');
-let navbar = document.querySelector('.navbar');
+// Toggle mobile menu
+const menuIcon = document.querySelector('#menu-icon');
+const navbar = document.querySelector('.navbar');
 
 menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
 };
 
-//scroll sections
-let sections = document.querySelectorAll('section');
-let navLinks = document.querySelectorAll('header nav a');
+// Sticky Header & Active Nav Link on Scroll
+const sections = document.querySelectorAll('section');
+const navLinks = document.querySelectorAll('header nav a');
+const header = document.querySelector('header');
 
-window.onscroll = () => {
-    sections.forEach(sec => {
-        let top = window.scrollY;
-        let offset = sec.offsetTop - 250;
-        let height = sec.offsetHeight;
-        let id = sec.getAttribute('id');
-
-        if (top >= offset && top < offset + height) {
-            navLinks.forEach(links => {
-                links.classList.remove('active');
-                document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
+const navObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${entry.target.id}`) {
+                    link.classList.add('active');
+                }
             });
-
-            // active sections for animation on scroll
-            sec.classList.add('show-animate');
-        } else {
-            // repeat animation while scrolling
-            sec.classList.remove('show-animate');
         }
     });
-    //sticky header
-    let header = document.querySelector('header');
+}, { rootMargin: '-50% 0px -50% 0px' });
+
+sections.forEach(sec => navObserver.observe(sec));
+
+window.onscroll = () => {
     header.classList.toggle('sticky', window.scrollY > 100);
 
-    //remove menuIcon and vav bar
+    // Close mobile menu on scroll
     menuIcon.classList.remove('bx-x');
     navbar.classList.remove('active');
-
-    //add animation to footer on scroll
-    let footer = document.querySelector('footer');
-    footer.classList.toggle('show-animate', this.innerHeight + this.scrollY >= document.scrollingElement.scrollHeight);
 };
 
-/*  type animation */
 
-// var type = new Typed(".n-typing",
-//     {
-//         strings: ["Abdulrahman Alatowi"],
-//         typeSpeed: 150,
-//         BackSpeed: 50,
-//         loop: true
-//     }
-// );
+// Scroll Reveal Animations
+const revealElements = document.querySelectorAll('.reveal');
 
-// var type = new Typed(".p-typing",
-//     {
-//         strings: ["Mobile App Developer", "Android App Developer", "IOS App Developer"],
-//         typeSpeed: 150,
-//         BackSpeed: 50,
-//         loop: true
-//     }
-// );
+const revealObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            // Optional: unobserve the element after it's visible to animate only once
+            // observer.unobserve(entry.target);
+        } else {
+            // Optional: remove the class to re-animate on scroll up/down
+            entry.target.classList.remove('is-visible');
+        }
+    });
+}, {
+    threshold: 0.1
+});
 
+revealElements.forEach(element => {
+    revealObserver.observe(element);
+});
