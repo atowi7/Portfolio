@@ -31,6 +31,8 @@ document.addEventListener("DOMContentLoaded", function () {
         'typing_text_1': { en: 'Mobile App Developer', ar: 'مطور تطبيقات جوال' },
         'typing_text_2': { en: 'Flutter Developer', ar: 'مطور فلاتر' },
         'typing_text_3': { en: 'Android & IOS Apps', ar: 'تطبيقات أندرويد و iOS' },
+        'typing_text_4': { en: 'Web Developer', ar: 'مطور ويب' },
+
         // Section Headings
         'education_heading': { en: '// Education_', ar: '// التعليم_' },
         'experience_heading': { en: '// Experience_', ar: '// الخبرات_' },
@@ -121,7 +123,8 @@ document.addEventListener("DOMContentLoaded", function () {
         homeWords = [
             translations.typing_text_1[lang],
             translations.typing_text_2[lang],
-            translations.typing_text_3[lang]
+            translations.typing_text_3[lang],
+            translations.typing_text_4[lang]
         ];
         // Reset typing animation to show new words immediately
         homeWordIndex = 0;
@@ -131,7 +134,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Update language switcher button text
         if (lang === 'en') {
-            langSwitcher.innerHTML = "<i class='bx bx-world'></i> AR";
+            langSwitcher.innerHTML = "<i class='bx bx-world'></i> عربي";
         } else {
             langSwitcher.innerHTML = "<i class='bx bx-world'></i> EN";
         }
